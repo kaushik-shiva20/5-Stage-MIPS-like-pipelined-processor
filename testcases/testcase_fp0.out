@@ -1,0 +1,1096 @@
+
+BEFORE PROGRAM EXECUTION...
+======================================================================
+
+Special purpose registers:
+Stage: IF
+PC = 268435456 / 0x10000000
+Stage: ID
+Stage: EX
+Stage: MEM
+Stage: WB
+General purpose registers:
+R4 = 1 / 0x1
+F1 = 0 / 0x0
+data_memory[0x0000a000:0x0000a028]
+0x0000a000: 00 00 00 3f 
+0x0000a004: 00 00 80 3f 
+0x0000a008: 00 00 c0 3f 
+0x0000a00c: 00 00 00 40 
+0x0000a010: 00 00 20 40 
+0x0000a014: 00 00 40 40 
+0x0000a018: 00 00 60 40 
+0x0000a01c: 00 00 80 40 
+0x0000a020: ff ff ff ff 
+0x0000a024: ff ff ff ff 
+data_memory[0x0000b000:0x0000b028]
+0x0000b000: ff ff ff ff 
+0x0000b004: ff ff ff ff 
+0x0000b008: ff ff ff ff 
+0x0000b00c: ff ff ff ff 
+0x0000b010: ff ff ff ff 
+0x0000b014: ff ff ff ff 
+0x0000b018: ff ff ff ff 
+0x0000b01c: ff ff ff ff 
+0x0000b020: ff ff ff ff 
+0x0000b024: ff ff ff ff 
+
+*****************************
+STARTING THE PROGRAM...
+*****************************
+
+First 40 clock cycles: inspecting the registers at each clock cycle...
+======================================================================
+
+CLOCK CYCLE #0
+Special purpose registers:
+Stage: IF
+PC = 268435460 / 0x10000004
+Stage: ID
+NPC = 268435460 / 0x10000004
+Stage: EX
+Stage: MEM
+Stage: WB
+General purpose registers:
+R4 = 1 / 0x1
+F1 = 0 / 0x0
+
+CLOCK CYCLE #1
+Special purpose registers:
+Stage: IF
+PC = 268435464 / 0x10000008
+Stage: ID
+NPC = 268435464 / 0x10000008
+Stage: EX
+NPC = 268435460 / 0x10000004
+Stage: MEM
+Stage: WB
+General purpose registers:
+R4 = 1 / 0x1
+F1 = 0 / 0x0
+
+CLOCK CYCLE #2
+Special purpose registers:
+Stage: IF
+PC = 268435464 / 0x10000008
+Stage: ID
+NPC = 268435464 / 0x10000008
+Stage: EX
+Stage: MEM
+Stage: WB
+General purpose registers:
+R4 = 1 / 0x1
+F1 = 0 / 0x0
+
+CLOCK CYCLE #3
+Special purpose registers:
+Stage: IF
+PC = 268435468 / 0x1000000c
+Stage: ID
+NPC = 268435468 / 0x1000000c
+Stage: EX
+NPC = 268435464 / 0x10000008
+Stage: MEM
+ALU_OUTPUT = 0 / 0x0
+Stage: WB
+General purpose registers:
+R4 = 1 / 0x1
+F1 = 0 / 0x0
+
+CLOCK CYCLE #4
+Special purpose registers:
+Stage: IF
+PC = 268435468 / 0x1000000c
+Stage: ID
+NPC = 268435468 / 0x1000000c
+Stage: EX
+Stage: MEM
+Stage: WB
+ALU_OUTPUT = 0 / 0x0
+General purpose registers:
+R4 = 1 / 0x1
+F1 = 0 / 0x0
+
+CLOCK CYCLE #5
+Special purpose registers:
+Stage: IF
+PC = 268435472 / 0x10000010
+Stage: ID
+NPC = 268435472 / 0x10000010
+Stage: EX
+NPC = 268435468 / 0x1000000c
+A = 0 / 0x0
+IMM = 40960 / 0xa000
+Stage: MEM
+ALU_OUTPUT = 0 / 0x0
+Stage: WB
+General purpose registers:
+R0 = 0 / 0x0
+R4 = 1 / 0x1
+F1 = 0 / 0x0
+
+CLOCK CYCLE #6
+Special purpose registers:
+Stage: IF
+PC = 268435472 / 0x10000010
+Stage: ID
+NPC = 268435472 / 0x10000010
+Stage: EX
+Stage: MEM
+Stage: WB
+ALU_OUTPUT = 0 / 0x0
+General purpose registers:
+R0 = 0 / 0x0
+R4 = 1 / 0x1
+F1 = 0 / 0x0
+
+CLOCK CYCLE #7
+Special purpose registers:
+Stage: IF
+PC = 268435476 / 0x10000014
+Stage: ID
+NPC = 268435476 / 0x10000014
+Stage: EX
+NPC = 268435472 / 0x10000010
+A = 0 / 0x0
+IMM = 45088 / 0xb020
+Stage: MEM
+ALU_OUTPUT = 40960 / 0xa000
+Stage: WB
+General purpose registers:
+R0 = 0 / 0x0
+R1 = 0 / 0x0
+R4 = 1 / 0x1
+F1 = 0 / 0x0
+
+CLOCK CYCLE #8
+Special purpose registers:
+Stage: IF
+PC = 268435476 / 0x10000014
+Stage: ID
+NPC = 268435476 / 0x10000014
+Stage: EX
+Stage: MEM
+Stage: WB
+ALU_OUTPUT = 40960 / 0xa000
+General purpose registers:
+R0 = 0 / 0x0
+R1 = 0 / 0x0
+R4 = 1 / 0x1
+F1 = 0 / 0x0
+
+CLOCK CYCLE #9
+Special purpose registers:
+Stage: IF
+PC = 268435480 / 0x10000018
+Stage: ID
+NPC = 268435480 / 0x10000018
+Stage: EX
+NPC = 268435476 / 0x10000014
+A = 40960 / 0xa000
+IMM = 0 / 0x0
+Stage: MEM
+ALU_OUTPUT = 45088 / 0xb020
+Stage: WB
+General purpose registers:
+R0 = 0 / 0x0
+R1 = 0 / 0x0
+R2 = 40960 / 0xa000
+R4 = 1 / 0x1
+F1 = 0 / 0x0
+
+CLOCK CYCLE #10
+Special purpose registers:
+Stage: IF
+PC = 268435480 / 0x10000018
+Stage: ID
+NPC = 268435480 / 0x10000018
+Stage: EX
+Stage: MEM
+Stage: WB
+ALU_OUTPUT = 45088 / 0xb020
+General purpose registers:
+R0 = 0 / 0x0
+R1 = 0 / 0x0
+R2 = 40960 / 0xa000
+R4 = 1 / 0x1
+F1 = 0 / 0x0
+
+CLOCK CYCLE #11
+Special purpose registers:
+Stage: IF
+PC = 268435480 / 0x10000018
+Stage: ID
+Stage: EX
+NPC = 268435480 / 0x10000018
+A = 1 / 0x1
+IMM = 8 / 0x8
+Stage: MEM
+ALU_OUTPUT = 40960 / 0xa000
+Stage: WB
+General purpose registers:
+R0 = 0 / 0x0
+R1 = 0 / 0x0
+R2 = 40960 / 0xa000
+R3 = 45088 / 0xb020
+R4 = 1 / 0x1
+F1 = 0 / 0x0
+
+CLOCK CYCLE #12
+Special purpose registers:
+Stage: IF
+PC = 268435480 / 0x10000018
+Stage: ID
+Stage: EX
+NPC = 268435480 / 0x10000018
+A = 1 / 0x1
+IMM = 8 / 0x8
+Stage: MEM
+ALU_OUTPUT = 40960 / 0xa000
+Stage: WB
+General purpose registers:
+R0 = 0 / 0x0
+R1 = 0 / 0x0
+R2 = 40960 / 0xa000
+R3 = 45088 / 0xb020
+R4 = 1 / 0x1
+F1 = 0 / 0x0
+
+CLOCK CYCLE #13
+Special purpose registers:
+Stage: IF
+PC = 268435480 / 0x10000018
+Stage: ID
+Stage: EX
+NPC = 268435480 / 0x10000018
+A = 1 / 0x1
+IMM = 8 / 0x8
+Stage: MEM
+ALU_OUTPUT = 40960 / 0xa000
+Stage: WB
+General purpose registers:
+R0 = 0 / 0x0
+R1 = 0 / 0x0
+R2 = 40960 / 0xa000
+R3 = 45088 / 0xb020
+R4 = 1 / 0x1
+F1 = 0 / 0x0
+
+CLOCK CYCLE #14
+Special purpose registers:
+Stage: IF
+PC = 268435480 / 0x10000018
+Stage: ID
+Stage: EX
+NPC = 268435480 / 0x10000018
+A = 1 / 0x1
+IMM = 8 / 0x8
+Stage: MEM
+ALU_OUTPUT = 40960 / 0xa000
+Stage: WB
+General purpose registers:
+R0 = 0 / 0x0
+R1 = 0 / 0x0
+R2 = 40960 / 0xa000
+R3 = 45088 / 0xb020
+R4 = 1 / 0x1
+F1 = 0 / 0x0
+
+CLOCK CYCLE #15
+Special purpose registers:
+Stage: IF
+PC = 268435480 / 0x10000018
+Stage: ID
+Stage: EX
+NPC = 268435480 / 0x10000018
+A = 1 / 0x1
+IMM = 8 / 0x8
+Stage: MEM
+ALU_OUTPUT = 40960 / 0xa000
+Stage: WB
+General purpose registers:
+R0 = 0 / 0x0
+R1 = 0 / 0x0
+R2 = 40960 / 0xa000
+R3 = 45088 / 0xb020
+R4 = 1 / 0x1
+F1 = 0 / 0x0
+
+CLOCK CYCLE #16
+Special purpose registers:
+Stage: IF
+PC = 268435480 / 0x10000018
+Stage: ID
+Stage: EX
+NPC = 268435480 / 0x10000018
+A = 1 / 0x1
+IMM = 8 / 0x8
+Stage: MEM
+ALU_OUTPUT = 40960 / 0xa000
+Stage: WB
+General purpose registers:
+R0 = 0 / 0x0
+R1 = 0 / 0x0
+R2 = 40960 / 0xa000
+R3 = 45088 / 0xb020
+R4 = 1 / 0x1
+F1 = 0 / 0x0
+
+CLOCK CYCLE #17
+Special purpose registers:
+Stage: IF
+PC = 268435480 / 0x10000018
+Stage: ID
+Stage: EX
+NPC = 268435480 / 0x10000018
+A = 1 / 0x1
+IMM = 8 / 0x8
+Stage: MEM
+ALU_OUTPUT = 40960 / 0xa000
+Stage: WB
+General purpose registers:
+R0 = 0 / 0x0
+R1 = 0 / 0x0
+R2 = 40960 / 0xa000
+R3 = 45088 / 0xb020
+R4 = 1 / 0x1
+F1 = 0 / 0x0
+
+CLOCK CYCLE #18
+Special purpose registers:
+Stage: IF
+PC = 268435480 / 0x10000018
+Stage: ID
+Stage: EX
+NPC = 268435480 / 0x10000018
+A = 1 / 0x1
+IMM = 8 / 0x8
+Stage: MEM
+ALU_OUTPUT = 40960 / 0xa000
+Stage: WB
+General purpose registers:
+R0 = 0 / 0x0
+R1 = 0 / 0x0
+R2 = 40960 / 0xa000
+R3 = 45088 / 0xb020
+R4 = 1 / 0x1
+F1 = 0 / 0x0
+
+CLOCK CYCLE #19
+Special purpose registers:
+Stage: IF
+PC = 268435480 / 0x10000018
+Stage: ID
+Stage: EX
+NPC = 268435480 / 0x10000018
+A = 1 / 0x1
+IMM = 8 / 0x8
+Stage: MEM
+ALU_OUTPUT = 40960 / 0xa000
+Stage: WB
+General purpose registers:
+R0 = 0 / 0x0
+R1 = 0 / 0x0
+R2 = 40960 / 0xa000
+R3 = 45088 / 0xb020
+R4 = 1 / 0x1
+F1 = 0 / 0x0
+
+CLOCK CYCLE #20
+Special purpose registers:
+Stage: IF
+PC = 268435480 / 0x10000018
+Stage: ID
+Stage: EX
+NPC = 268435480 / 0x10000018
+A = 1 / 0x1
+IMM = 8 / 0x8
+Stage: MEM
+ALU_OUTPUT = 40960 / 0xa000
+Stage: WB
+General purpose registers:
+R0 = 0 / 0x0
+R1 = 0 / 0x0
+R2 = 40960 / 0xa000
+R3 = 45088 / 0xb020
+R4 = 1 / 0x1
+F1 = 0 / 0x0
+
+CLOCK CYCLE #21
+Special purpose registers:
+Stage: IF
+PC = 268435480 / 0x10000018
+Stage: ID
+Stage: EX
+Stage: MEM
+Stage: WB
+ALU_OUTPUT = 40960 / 0xa000
+LMD = 1056964608 / 0x3f000000
+General purpose registers:
+R0 = 0 / 0x0
+R1 = 0 / 0x0
+R2 = 40960 / 0xa000
+R3 = 45088 / 0xb020
+R4 = 1 / 0x1
+F1 = 0 / 0x0
+
+CLOCK CYCLE #22
+Special purpose registers:
+Stage: IF
+PC = 268435480 / 0x10000018
+Stage: ID
+Stage: EX
+Stage: MEM
+ALU_OUTPUT = 268435488 / 0x10000020
+Stage: WB
+General purpose registers:
+R0 = 0 / 0x0
+R1 = 0 / 0x0
+R2 = 40960 / 0xa000
+R3 = 45088 / 0xb020
+R4 = 1 / 0x1
+F1 = 0 / 0x0
+F4 = 0.5 / 0x3f000000
+
+CLOCK CYCLE #23
+Special purpose registers:
+Stage: IF
+PC = 268435484 / 0x1000001c
+Stage: ID
+NPC = 268435484 / 0x1000001c
+Stage: EX
+Stage: MEM
+Stage: WB
+ALU_OUTPUT = 268435488 / 0x10000020
+General purpose registers:
+R0 = 0 / 0x0
+R1 = 0 / 0x0
+R2 = 40960 / 0xa000
+R3 = 45088 / 0xb020
+R4 = 1 / 0x1
+F1 = 0 / 0x0
+F4 = 0.5 / 0x3f000000
+
+CLOCK CYCLE #24
+Special purpose registers:
+Stage: IF
+PC = 268435488 / 0x10000020
+Stage: ID
+NPC = 268435488 / 0x10000020
+Stage: EX
+NPC = 268435484 / 0x1000001c
+A = 45088 / 0xb020
+B = 1056964608 / 0x3f000000
+IMM = 0 / 0x0
+Stage: MEM
+Stage: WB
+General purpose registers:
+R0 = 0 / 0x0
+R1 = 0 / 0x0
+R2 = 40960 / 0xa000
+R3 = 45088 / 0xb020
+R4 = 1 / 0x1
+F1 = 0 / 0x0
+F4 = 0.5 / 0x3f000000
+
+CLOCK CYCLE #25
+Special purpose registers:
+Stage: IF
+PC = 268435488 / 0x10000020
+Stage: ID
+NPC = 268435488 / 0x10000020
+Stage: EX
+Stage: MEM
+Stage: WB
+General purpose registers:
+R0 = 0 / 0x0
+R1 = 0 / 0x0
+R2 = 40960 / 0xa000
+R3 = 45088 / 0xb020
+R4 = 1 / 0x1
+F1 = 0 / 0x0
+F4 = 0.5 / 0x3f000000
+
+CLOCK CYCLE #26
+Special purpose registers:
+Stage: IF
+PC = 268435492 / 0x10000024
+Stage: ID
+NPC = 268435492 / 0x10000024
+Stage: EX
+NPC = 268435488 / 0x10000020
+A = 45088 / 0xb020
+IMM = 4 / 0x4
+Stage: MEM
+B = 1056964608 / 0x3f000000
+ALU_OUTPUT = 45088 / 0xb020
+Stage: WB
+General purpose registers:
+R0 = 0 / 0x0
+R1 = 0 / 0x0
+R2 = 40960 / 0xa000
+R3 = 45088 / 0xb020
+R4 = 1 / 0x1
+F1 = 0 / 0x0
+F4 = 0.5 / 0x3f000000
+
+CLOCK CYCLE #27
+Special purpose registers:
+Stage: IF
+PC = 268435492 / 0x10000024
+Stage: ID
+NPC = 268435492 / 0x10000024
+Stage: EX
+NPC = 268435488 / 0x10000020
+A = 45088 / 0xb020
+IMM = 4 / 0x4
+Stage: MEM
+B = 1056964608 / 0x3f000000
+ALU_OUTPUT = 45088 / 0xb020
+Stage: WB
+General purpose registers:
+R0 = 0 / 0x0
+R1 = 0 / 0x0
+R2 = 40960 / 0xa000
+R3 = 45088 / 0xb020
+R4 = 1 / 0x1
+F1 = 0 / 0x0
+F4 = 0.5 / 0x3f000000
+
+CLOCK CYCLE #28
+Special purpose registers:
+Stage: IF
+PC = 268435492 / 0x10000024
+Stage: ID
+NPC = 268435492 / 0x10000024
+Stage: EX
+NPC = 268435488 / 0x10000020
+A = 45088 / 0xb020
+IMM = 4 / 0x4
+Stage: MEM
+B = 1056964608 / 0x3f000000
+ALU_OUTPUT = 45088 / 0xb020
+Stage: WB
+General purpose registers:
+R0 = 0 / 0x0
+R1 = 0 / 0x0
+R2 = 40960 / 0xa000
+R3 = 45088 / 0xb020
+R4 = 1 / 0x1
+F1 = 0 / 0x0
+F4 = 0.5 / 0x3f000000
+
+CLOCK CYCLE #29
+Special purpose registers:
+Stage: IF
+PC = 268435492 / 0x10000024
+Stage: ID
+NPC = 268435492 / 0x10000024
+Stage: EX
+NPC = 268435488 / 0x10000020
+A = 45088 / 0xb020
+IMM = 4 / 0x4
+Stage: MEM
+B = 1056964608 / 0x3f000000
+ALU_OUTPUT = 45088 / 0xb020
+Stage: WB
+General purpose registers:
+R0 = 0 / 0x0
+R1 = 0 / 0x0
+R2 = 40960 / 0xa000
+R3 = 45088 / 0xb020
+R4 = 1 / 0x1
+F1 = 0 / 0x0
+F4 = 0.5 / 0x3f000000
+
+CLOCK CYCLE #30
+Special purpose registers:
+Stage: IF
+PC = 268435492 / 0x10000024
+Stage: ID
+NPC = 268435492 / 0x10000024
+Stage: EX
+NPC = 268435488 / 0x10000020
+A = 45088 / 0xb020
+IMM = 4 / 0x4
+Stage: MEM
+B = 1056964608 / 0x3f000000
+ALU_OUTPUT = 45088 / 0xb020
+Stage: WB
+General purpose registers:
+R0 = 0 / 0x0
+R1 = 0 / 0x0
+R2 = 40960 / 0xa000
+R3 = 45088 / 0xb020
+R4 = 1 / 0x1
+F1 = 0 / 0x0
+F4 = 0.5 / 0x3f000000
+
+CLOCK CYCLE #31
+Special purpose registers:
+Stage: IF
+PC = 268435492 / 0x10000024
+Stage: ID
+NPC = 268435492 / 0x10000024
+Stage: EX
+NPC = 268435488 / 0x10000020
+A = 45088 / 0xb020
+IMM = 4 / 0x4
+Stage: MEM
+B = 1056964608 / 0x3f000000
+ALU_OUTPUT = 45088 / 0xb020
+Stage: WB
+General purpose registers:
+R0 = 0 / 0x0
+R1 = 0 / 0x0
+R2 = 40960 / 0xa000
+R3 = 45088 / 0xb020
+R4 = 1 / 0x1
+F1 = 0 / 0x0
+F4 = 0.5 / 0x3f000000
+
+CLOCK CYCLE #32
+Special purpose registers:
+Stage: IF
+PC = 268435492 / 0x10000024
+Stage: ID
+NPC = 268435492 / 0x10000024
+Stage: EX
+NPC = 268435488 / 0x10000020
+A = 45088 / 0xb020
+IMM = 4 / 0x4
+Stage: MEM
+B = 1056964608 / 0x3f000000
+ALU_OUTPUT = 45088 / 0xb020
+Stage: WB
+General purpose registers:
+R0 = 0 / 0x0
+R1 = 0 / 0x0
+R2 = 40960 / 0xa000
+R3 = 45088 / 0xb020
+R4 = 1 / 0x1
+F1 = 0 / 0x0
+F4 = 0.5 / 0x3f000000
+
+CLOCK CYCLE #33
+Special purpose registers:
+Stage: IF
+PC = 268435492 / 0x10000024
+Stage: ID
+NPC = 268435492 / 0x10000024
+Stage: EX
+NPC = 268435488 / 0x10000020
+A = 45088 / 0xb020
+IMM = 4 / 0x4
+Stage: MEM
+B = 1056964608 / 0x3f000000
+ALU_OUTPUT = 45088 / 0xb020
+Stage: WB
+General purpose registers:
+R0 = 0 / 0x0
+R1 = 0 / 0x0
+R2 = 40960 / 0xa000
+R3 = 45088 / 0xb020
+R4 = 1 / 0x1
+F1 = 0 / 0x0
+F4 = 0.5 / 0x3f000000
+
+CLOCK CYCLE #34
+Special purpose registers:
+Stage: IF
+PC = 268435492 / 0x10000024
+Stage: ID
+NPC = 268435492 / 0x10000024
+Stage: EX
+NPC = 268435488 / 0x10000020
+A = 45088 / 0xb020
+IMM = 4 / 0x4
+Stage: MEM
+B = 1056964608 / 0x3f000000
+ALU_OUTPUT = 45088 / 0xb020
+Stage: WB
+General purpose registers:
+R0 = 0 / 0x0
+R1 = 0 / 0x0
+R2 = 40960 / 0xa000
+R3 = 45088 / 0xb020
+R4 = 1 / 0x1
+F1 = 0 / 0x0
+F4 = 0.5 / 0x3f000000
+
+CLOCK CYCLE #35
+Special purpose registers:
+Stage: IF
+PC = 268435492 / 0x10000024
+Stage: ID
+NPC = 268435492 / 0x10000024
+Stage: EX
+NPC = 268435488 / 0x10000020
+A = 45088 / 0xb020
+IMM = 4 / 0x4
+Stage: MEM
+B = 1056964608 / 0x3f000000
+ALU_OUTPUT = 45088 / 0xb020
+Stage: WB
+General purpose registers:
+R0 = 0 / 0x0
+R1 = 0 / 0x0
+R2 = 40960 / 0xa000
+R3 = 45088 / 0xb020
+R4 = 1 / 0x1
+F1 = 0 / 0x0
+F4 = 0.5 / 0x3f000000
+
+CLOCK CYCLE #36
+Special purpose registers:
+Stage: IF
+PC = 268435496 / 0x10000028
+Stage: ID
+NPC = 268435496 / 0x10000028
+Stage: EX
+NPC = 268435492 / 0x10000024
+A = 0 / 0x0
+B = 1056964608 / 0x3f000000
+Stage: MEM
+Stage: WB
+ALU_OUTPUT = 45088 / 0xb020
+General purpose registers:
+R0 = 0 / 0x0
+R1 = 0 / 0x0
+R2 = 40960 / 0xa000
+R3 = 45088 / 0xb020
+R4 = 1 / 0x1
+F1 = 0 / 0x0
+F4 = 0.5 / 0x3f000000
+
+CLOCK CYCLE #37
+Special purpose registers:
+Stage: IF
+PC = 268435500 / 0x1000002c
+Stage: ID
+NPC = 268435500 / 0x1000002c
+Stage: EX
+NPC = 268435496 / 0x10000028
+A = 40960 / 0xa000
+IMM = 4 / 0x4
+Stage: MEM
+ALU_OUTPUT = 45084 / 0xb01c
+Stage: WB
+General purpose registers:
+R0 = 0 / 0x0
+R1 = 0 / 0x0
+R2 = 40960 / 0xa000
+R3 = 45088 / 0xb020
+R4 = 1 / 0x1
+F1 = 0 / 0x0
+F4 = 0.5 / 0x3f000000
+
+CLOCK CYCLE #38
+Special purpose registers:
+Stage: IF
+PC = 268435500 / 0x1000002c
+Stage: ID
+NPC = 268435500 / 0x1000002c
+Stage: EX
+Stage: MEM
+Stage: WB
+ALU_OUTPUT = 45084 / 0xb01c
+General purpose registers:
+R0 = 0 / 0x0
+R1 = 0 / 0x0
+R2 = 40960 / 0xa000
+R3 = 45088 / 0xb020
+R4 = 1 / 0x1
+F1 = 0 / 0x0
+F4 = 0.5 / 0x3f000000
+
+CLOCK CYCLE #39
+Special purpose registers:
+Stage: IF
+PC = 268435500 / 0x1000002c
+Stage: ID
+NPC = 268435500 / 0x1000002c
+Stage: EX
+Stage: MEM
+ALU_OUTPUT = 40964 / 0xa004
+Stage: WB
+General purpose registers:
+R0 = 0 / 0x0
+R1 = 0 / 0x0
+R2 = 40960 / 0xa000
+R3 = 45084 / 0xb01c
+R4 = 1 / 0x1
+F1 = 0 / 0x0
+F4 = 0.5 / 0x3f000000
+
+Instructions 5-14: inspecting the registers after each instruction...
+======================================================================
+
+INSTRUCTION #5
+Special purpose registers:
+Stage: IF
+PC = 268435504 / 0x10000030
+Stage: ID
+NPC = 268435504 / 0x10000030
+Stage: EX
+Stage: MEM
+Stage: WB
+ALU_OUTPUT = 4294967268 / 0xffffffe4
+General purpose registers:
+R0 = 0 / 0x0
+R1 = 0 / 0x0
+R2 = 40964 / 0xa004
+R3 = 45084 / 0xb01c
+R4 = 1 / 0x1
+F1 = 0.5 / 0x3f000000
+F4 = 0.5 / 0x3f000000
+
+INSTRUCTION #6
+Special purpose registers:
+Stage: IF
+PC = 268435480 / 0x10000018
+Stage: ID
+NPC = 268435480 / 0x10000018
+Stage: EX
+NPC = 268435476 / 0x10000014
+A = 40964 / 0xa004
+IMM = 0 / 0x0
+Stage: MEM
+Stage: WB
+General purpose registers:
+R0 = 0 / 0x0
+R1 = 0 / 0x0
+R2 = 40964 / 0xa004
+R3 = 45084 / 0xb01c
+R4 = 1 / 0x1
+R5 = -28 / 0xffffffe4
+F1 = 0.5 / 0x3f000000
+F4 = 0.5 / 0x3f000000
+
+INSTRUCTION #7
+Special purpose registers:
+Stage: IF
+PC = 268435480 / 0x10000018
+Stage: ID
+Stage: EX
+NPC = 268435480 / 0x10000018
+A = 1 / 0x1
+IMM = 8 / 0x8
+Stage: MEM
+ALU_OUTPUT = 40964 / 0xa004
+Stage: WB
+General purpose registers:
+R0 = 0 / 0x0
+R1 = 0 / 0x0
+R2 = 40964 / 0xa004
+R3 = 45084 / 0xb01c
+R4 = 1 / 0x1
+R5 = -28 / 0xffffffe4
+F1 = 0.5 / 0x3f000000
+F4 = 0.5 / 0x3f000000
+
+INSTRUCTION #8
+Special purpose registers:
+Stage: IF
+PC = 268435480 / 0x10000018
+Stage: ID
+Stage: EX
+NPC = 268435480 / 0x10000018
+A = 1 / 0x1
+IMM = 8 / 0x8
+Stage: MEM
+ALU_OUTPUT = 40964 / 0xa004
+Stage: WB
+General purpose registers:
+R0 = 0 / 0x0
+R1 = 0 / 0x0
+R2 = 40964 / 0xa004
+R3 = 45084 / 0xb01c
+R4 = 1 / 0x1
+R5 = -28 / 0xffffffe4
+F1 = 0.5 / 0x3f000000
+F4 = 0.5 / 0x3f000000
+
+INSTRUCTION #9
+Special purpose registers:
+Stage: IF
+PC = 268435488 / 0x10000020
+Stage: ID
+NPC = 268435488 / 0x10000020
+Stage: EX
+NPC = 268435484 / 0x1000001c
+A = 45084 / 0xb01c
+B = 1065353216 / 0x3f800000
+IMM = 0 / 0x0
+Stage: MEM
+Stage: WB
+General purpose registers:
+R0 = 0 / 0x0
+R1 = 0 / 0x0
+R2 = 40964 / 0xa004
+R3 = 45084 / 0xb01c
+R4 = 1 / 0x1
+R5 = -28 / 0xffffffe4
+F1 = 0.5 / 0x3f000000
+F4 = 1 / 0x3f800000
+
+INSTRUCTION #10
+Special purpose registers:
+Stage: IF
+PC = 268435492 / 0x10000024
+Stage: ID
+NPC = 268435492 / 0x10000024
+Stage: EX
+NPC = 268435488 / 0x10000020
+A = 45084 / 0xb01c
+IMM = 4 / 0x4
+Stage: MEM
+B = 1065353216 / 0x3f800000
+ALU_OUTPUT = 45084 / 0xb01c
+Stage: WB
+General purpose registers:
+R0 = 0 / 0x0
+R1 = 0 / 0x0
+R2 = 40964 / 0xa004
+R3 = 45084 / 0xb01c
+R4 = 1 / 0x1
+R5 = -28 / 0xffffffe4
+F1 = 0.5 / 0x3f000000
+F4 = 1 / 0x3f800000
+
+INSTRUCTION #11
+Special purpose registers:
+Stage: IF
+PC = 268435492 / 0x10000024
+Stage: ID
+NPC = 268435492 / 0x10000024
+Stage: EX
+NPC = 268435488 / 0x10000020
+A = 45084 / 0xb01c
+IMM = 4 / 0x4
+Stage: MEM
+B = 1065353216 / 0x3f800000
+ALU_OUTPUT = 45084 / 0xb01c
+Stage: WB
+General purpose registers:
+R0 = 0 / 0x0
+R1 = 0 / 0x0
+R2 = 40964 / 0xa004
+R3 = 45084 / 0xb01c
+R4 = 1 / 0x1
+R5 = -28 / 0xffffffe4
+F1 = 0.5 / 0x3f000000
+F4 = 1 / 0x3f800000
+
+INSTRUCTION #12
+Special purpose registers:
+Stage: IF
+PC = 268435500 / 0x1000002c
+Stage: ID
+NPC = 268435500 / 0x1000002c
+Stage: EX
+Stage: MEM
+ALU_OUTPUT = 40968 / 0xa008
+Stage: WB
+General purpose registers:
+R0 = 0 / 0x0
+R1 = 0 / 0x0
+R2 = 40964 / 0xa004
+R3 = 45080 / 0xb018
+R4 = 1 / 0x1
+R5 = -28 / 0xffffffe4
+F1 = 0.5 / 0x3f000000
+F4 = 1 / 0x3f800000
+
+INSTRUCTION #13
+Special purpose registers:
+Stage: IF
+PC = 268435504 / 0x10000030
+Stage: ID
+NPC = 268435504 / 0x10000030
+Stage: EX
+Stage: MEM
+Stage: WB
+ALU_OUTPUT = 4294967272 / 0xffffffe8
+General purpose registers:
+R0 = 0 / 0x0
+R1 = 0 / 0x0
+R2 = 40968 / 0xa008
+R3 = 45080 / 0xb018
+R4 = 1 / 0x1
+R5 = -28 / 0xffffffe4
+F1 = 1.5 / 0x3fc00000
+F4 = 1 / 0x3f800000
+
+INSTRUCTION #14
+Special purpose registers:
+Stage: IF
+PC = 268435480 / 0x10000018
+Stage: ID
+NPC = 268435480 / 0x10000018
+Stage: EX
+NPC = 268435476 / 0x10000014
+A = 40968 / 0xa008
+IMM = 0 / 0x0
+Stage: MEM
+Stage: WB
+General purpose registers:
+R0 = 0 / 0x0
+R1 = 0 / 0x0
+R2 = 40968 / 0xa008
+R3 = 45080 / 0xb018
+R4 = 1 / 0x1
+R5 = -24 / 0xffffffe8
+F1 = 1.5 / 0x3fc00000
+F4 = 1 / 0x3f800000
+
+EXECUTING PROGRAM TO COMPLETION...
+
+PROGRAM TERMINATED
+===================
+
+Special purpose registers:
+Stage: IF
+PC = 268435512 / 0x10000038
+Stage: ID
+NPC = 268435512 / 0x10000038
+Stage: EX
+NPC = 268435512 / 0x10000038
+Stage: MEM
+Stage: WB
+General purpose registers:
+R0 = 0 / 0x0
+R1 = 0 / 0x0
+R2 = 40992 / 0xa020
+R3 = 45056 / 0xb000
+R4 = 1 / 0x1
+R5 = 0 / 0x0
+F1 = 18 / 0x41900000
+F4 = 4 / 0x40800000
+data_memory[0x0000a000:0x0000a028]
+0x0000a000: 00 00 00 3f 
+0x0000a004: 00 00 80 3f 
+0x0000a008: 00 00 c0 3f 
+0x0000a00c: 00 00 00 40 
+0x0000a010: 00 00 20 40 
+0x0000a014: 00 00 40 40 
+0x0000a018: 00 00 60 40 
+0x0000a01c: 00 00 80 40 
+0x0000a020: 00 00 90 41 
+0x0000a024: 00 b0 00 00 
+data_memory[0x0000b000:0x0000b028]
+0x0000b000: ff ff ff ff 
+0x0000b004: 00 00 80 40 
+0x0000b008: 00 00 60 40 
+0x0000b00c: 00 00 40 40 
+0x0000b010: 00 00 20 40 
+0x0000b014: 00 00 00 40 
+0x0000b018: 00 00 c0 3f 
+0x0000b01c: 00 00 80 3f 
+0x0000b020: 00 00 00 3f 
+0x0000b024: ff ff ff ff 
+
+Instruction executed = 70
+Clock cycles = 354
+Stall inserted = 279
+IPC = 0.19774

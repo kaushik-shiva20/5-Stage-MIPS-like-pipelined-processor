@@ -1,0 +1,562 @@
+
+BEFORE PROGRAM EXECUTION...
+======================================================================
+
+Special purpose registers:
+Stage: IF
+PC = 268435456 / 0x10000000
+Stage: ID
+Stage: EX
+Stage: MEM
+Stage: WB
+General purpose registers:
+R0 = 0 / 0x0
+R1 = 40960 / 0xa000
+F0 = 0 / 0x0
+F1 = 1 / 0x3f800000
+F2 = 2 / 0x40000000
+F3 = 3 / 0x40400000
+F4 = 4 / 0x40800000
+F5 = 5 / 0x40a00000
+F6 = 6 / 0x40c00000
+F7 = 7 / 0x40e00000
+F8 = 8 / 0x41000000
+F9 = 9 / 0x41100000
+data_memory[0x0000a000:0x0000a010]
+0x0000a000: 00 00 20 41 
+0x0000a004: 00 00 a0 41 
+0x0000a008: 00 00 f0 41 
+0x0000a00c: 00 00 20 42 
+
+*****************************
+STARTING THE PROGRAM...
+*****************************
+
+First 20 clock cycles: inspecting the registers at each clock cycle...
+======================================================================
+
+CLOCK CYCLE #0
+Special purpose registers:
+Stage: IF
+PC = 268435460 / 0x10000004
+Stage: ID
+NPC = 268435460 / 0x10000004
+Stage: EX
+Stage: MEM
+Stage: WB
+General purpose registers:
+R0 = 0 / 0x0
+R1 = 40960 / 0xa000
+F0 = 0 / 0x0
+F1 = 1 / 0x3f800000
+F2 = 2 / 0x40000000
+F3 = 3 / 0x40400000
+F4 = 4 / 0x40800000
+F5 = 5 / 0x40a00000
+F6 = 6 / 0x40c00000
+F7 = 7 / 0x40e00000
+F8 = 8 / 0x41000000
+F9 = 9 / 0x41100000
+
+CLOCK CYCLE #1
+Special purpose registers:
+Stage: IF
+PC = 268435464 / 0x10000008
+Stage: ID
+NPC = 268435464 / 0x10000008
+Stage: EX
+NPC = 268435460 / 0x10000004
+A = 40960 / 0xa000
+IMM = 0 / 0x0
+Stage: MEM
+Stage: WB
+General purpose registers:
+R0 = 0 / 0x0
+R1 = 40960 / 0xa000
+F0 = 0 / 0x0
+F1 = 1 / 0x3f800000
+F2 = 2 / 0x40000000
+F3 = 3 / 0x40400000
+F4 = 4 / 0x40800000
+F5 = 5 / 0x40a00000
+F6 = 6 / 0x40c00000
+F7 = 7 / 0x40e00000
+F8 = 8 / 0x41000000
+F9 = 9 / 0x41100000
+
+CLOCK CYCLE #2
+Special purpose registers:
+Stage: IF
+PC = 268435464 / 0x10000008
+Stage: ID
+NPC = 268435464 / 0x10000008
+Stage: EX
+Stage: MEM
+ALU_OUTPUT = 40960 / 0xa000
+Stage: WB
+General purpose registers:
+R0 = 0 / 0x0
+R1 = 40960 / 0xa000
+F0 = 0 / 0x0
+F1 = 1 / 0x3f800000
+F2 = 2 / 0x40000000
+F3 = 3 / 0x40400000
+F4 = 4 / 0x40800000
+F5 = 5 / 0x40a00000
+F6 = 6 / 0x40c00000
+F7 = 7 / 0x40e00000
+F8 = 8 / 0x41000000
+F9 = 9 / 0x41100000
+
+CLOCK CYCLE #3
+Special purpose registers:
+Stage: IF
+PC = 268435464 / 0x10000008
+Stage: ID
+NPC = 268435464 / 0x10000008
+Stage: EX
+Stage: MEM
+Stage: WB
+ALU_OUTPUT = 40960 / 0xa000
+LMD = 1092616192 / 0x41200000
+General purpose registers:
+R0 = 0 / 0x0
+R1 = 40960 / 0xa000
+F0 = 0 / 0x0
+F1 = 1 / 0x3f800000
+F2 = 2 / 0x40000000
+F3 = 3 / 0x40400000
+F4 = 4 / 0x40800000
+F5 = 5 / 0x40a00000
+F6 = 6 / 0x40c00000
+F7 = 7 / 0x40e00000
+F8 = 8 / 0x41000000
+F9 = 9 / 0x41100000
+
+CLOCK CYCLE #4
+Special purpose registers:
+Stage: IF
+PC = 268435468 / 0x1000000c
+Stage: ID
+NPC = 268435468 / 0x1000000c
+Stage: EX
+NPC = 268435464 / 0x10000008
+A = 1092616192 / 0x41200000
+B = 1092616192 / 0x41200000
+Stage: MEM
+Stage: WB
+General purpose registers:
+R0 = 0 / 0x0
+R1 = 40960 / 0xa000
+F0 = 0 / 0x0
+F1 = 10 / 0x41200000
+F2 = 2 / 0x40000000
+F3 = 3 / 0x40400000
+F4 = 4 / 0x40800000
+F5 = 5 / 0x40a00000
+F6 = 6 / 0x40c00000
+F7 = 7 / 0x40e00000
+F8 = 8 / 0x41000000
+F9 = 9 / 0x41100000
+
+CLOCK CYCLE #5
+Special purpose registers:
+Stage: IF
+PC = 268435468 / 0x1000000c
+Stage: ID
+NPC = 268435468 / 0x1000000c
+Stage: EX
+Stage: MEM
+Stage: WB
+General purpose registers:
+R0 = 0 / 0x0
+R1 = 40960 / 0xa000
+F0 = 0 / 0x0
+F1 = 10 / 0x41200000
+F2 = 2 / 0x40000000
+F3 = 3 / 0x40400000
+F4 = 4 / 0x40800000
+F5 = 5 / 0x40a00000
+F6 = 6 / 0x40c00000
+F7 = 7 / 0x40e00000
+F8 = 8 / 0x41000000
+F9 = 9 / 0x41100000
+
+CLOCK CYCLE #6
+Special purpose registers:
+Stage: IF
+PC = 268435468 / 0x1000000c
+Stage: ID
+NPC = 268435468 / 0x1000000c
+Stage: EX
+Stage: MEM
+Stage: WB
+General purpose registers:
+R0 = 0 / 0x0
+R1 = 40960 / 0xa000
+F0 = 0 / 0x0
+F1 = 10 / 0x41200000
+F2 = 2 / 0x40000000
+F3 = 3 / 0x40400000
+F4 = 4 / 0x40800000
+F5 = 5 / 0x40a00000
+F6 = 6 / 0x40c00000
+F7 = 7 / 0x40e00000
+F8 = 8 / 0x41000000
+F9 = 9 / 0x41100000
+
+CLOCK CYCLE #7
+Special purpose registers:
+Stage: IF
+PC = 268435468 / 0x1000000c
+Stage: ID
+NPC = 268435468 / 0x1000000c
+Stage: EX
+Stage: MEM
+Stage: WB
+General purpose registers:
+R0 = 0 / 0x0
+R1 = 40960 / 0xa000
+F0 = 0 / 0x0
+F1 = 10 / 0x41200000
+F2 = 2 / 0x40000000
+F3 = 3 / 0x40400000
+F4 = 4 / 0x40800000
+F5 = 5 / 0x40a00000
+F6 = 6 / 0x40c00000
+F7 = 7 / 0x40e00000
+F8 = 8 / 0x41000000
+F9 = 9 / 0x41100000
+
+CLOCK CYCLE #8
+Special purpose registers:
+Stage: IF
+PC = 268435468 / 0x1000000c
+Stage: ID
+NPC = 268435468 / 0x1000000c
+Stage: EX
+Stage: MEM
+Stage: WB
+General purpose registers:
+R0 = 0 / 0x0
+R1 = 40960 / 0xa000
+F0 = 0 / 0x0
+F1 = 10 / 0x41200000
+F2 = 2 / 0x40000000
+F3 = 3 / 0x40400000
+F4 = 4 / 0x40800000
+F5 = 5 / 0x40a00000
+F6 = 6 / 0x40c00000
+F7 = 7 / 0x40e00000
+F8 = 8 / 0x41000000
+F9 = 9 / 0x41100000
+
+CLOCK CYCLE #9
+Special purpose registers:
+Stage: IF
+PC = 268435468 / 0x1000000c
+Stage: ID
+NPC = 268435468 / 0x1000000c
+Stage: EX
+Stage: MEM
+Stage: WB
+General purpose registers:
+R0 = 0 / 0x0
+R1 = 40960 / 0xa000
+F0 = 0 / 0x0
+F1 = 10 / 0x41200000
+F2 = 2 / 0x40000000
+F3 = 3 / 0x40400000
+F4 = 4 / 0x40800000
+F5 = 5 / 0x40a00000
+F6 = 6 / 0x40c00000
+F7 = 7 / 0x40e00000
+F8 = 8 / 0x41000000
+F9 = 9 / 0x41100000
+
+CLOCK CYCLE #10
+Special purpose registers:
+Stage: IF
+PC = 268435472 / 0x10000010
+Stage: ID
+NPC = 268435472 / 0x10000010
+Stage: EX
+NPC = 268435468 / 0x1000000c
+A = 1092616192 / 0x41200000
+B = 1084227584 / 0x40a00000
+Stage: MEM
+Stage: WB
+General purpose registers:
+R0 = 0 / 0x0
+R1 = 40960 / 0xa000
+F0 = 0 / 0x0
+F1 = 10 / 0x41200000
+F2 = 2 / 0x40000000
+F3 = 3 / 0x40400000
+F4 = 4 / 0x40800000
+F5 = 5 / 0x40a00000
+F6 = 6 / 0x40c00000
+F7 = 7 / 0x40e00000
+F8 = 8 / 0x41000000
+F9 = 9 / 0x41100000
+
+CLOCK CYCLE #11
+Special purpose registers:
+Stage: IF
+PC = 268435472 / 0x10000010
+Stage: ID
+NPC = 268435472 / 0x10000010
+Stage: EX
+Stage: MEM
+Stage: WB
+General purpose registers:
+R0 = 0 / 0x0
+R1 = 40960 / 0xa000
+F0 = 0 / 0x0
+F1 = 10 / 0x41200000
+F2 = 2 / 0x40000000
+F3 = 3 / 0x40400000
+F4 = 4 / 0x40800000
+F5 = 5 / 0x40a00000
+F6 = 6 / 0x40c00000
+F7 = 7 / 0x40e00000
+F8 = 8 / 0x41000000
+F9 = 9 / 0x41100000
+
+CLOCK CYCLE #12
+Special purpose registers:
+Stage: IF
+PC = 268435472 / 0x10000010
+Stage: ID
+NPC = 268435472 / 0x10000010
+Stage: EX
+Stage: MEM
+Stage: WB
+General purpose registers:
+R0 = 0 / 0x0
+R1 = 40960 / 0xa000
+F0 = 0 / 0x0
+F1 = 10 / 0x41200000
+F2 = 2 / 0x40000000
+F3 = 3 / 0x40400000
+F4 = 4 / 0x40800000
+F5 = 5 / 0x40a00000
+F6 = 6 / 0x40c00000
+F7 = 7 / 0x40e00000
+F8 = 8 / 0x41000000
+F9 = 9 / 0x41100000
+
+CLOCK CYCLE #13
+Special purpose registers:
+Stage: IF
+PC = 268435472 / 0x10000010
+Stage: ID
+NPC = 268435472 / 0x10000010
+Stage: EX
+Stage: MEM
+Stage: WB
+General purpose registers:
+R0 = 0 / 0x0
+R1 = 40960 / 0xa000
+F0 = 0 / 0x0
+F1 = 10 / 0x41200000
+F2 = 2 / 0x40000000
+F3 = 3 / 0x40400000
+F4 = 4 / 0x40800000
+F5 = 5 / 0x40a00000
+F6 = 6 / 0x40c00000
+F7 = 7 / 0x40e00000
+F8 = 8 / 0x41000000
+F9 = 9 / 0x41100000
+
+CLOCK CYCLE #14
+Special purpose registers:
+Stage: IF
+PC = 268435476 / 0x10000014
+Stage: ID
+NPC = 268435476 / 0x10000014
+Stage: EX
+NPC = 268435472 / 0x10000010
+A = 1084227584 / 0x40a00000
+B = 1084227584 / 0x40a00000
+Stage: MEM
+B = 1092616192 / 0x41200000
+ALU_OUTPUT = 1120403456 / 0x42c80000
+Stage: WB
+General purpose registers:
+R0 = 0 / 0x0
+R1 = 40960 / 0xa000
+F0 = 0 / 0x0
+F1 = 10 / 0x41200000
+F2 = 2 / 0x40000000
+F3 = 3 / 0x40400000
+F4 = 4 / 0x40800000
+F5 = 5 / 0x40a00000
+F6 = 6 / 0x40c00000
+F7 = 7 / 0x40e00000
+F8 = 8 / 0x41000000
+F9 = 9 / 0x41100000
+
+CLOCK CYCLE #15
+Special purpose registers:
+Stage: IF
+PC = 268435476 / 0x10000014
+Stage: ID
+NPC = 268435476 / 0x10000014
+Stage: EX
+NPC = 268435476 / 0x10000014
+A = 1086324736 / 0x40c00000
+B = 1088421888 / 0x40e00000
+Stage: MEM
+B = 1084227584 / 0x40a00000
+ALU_OUTPUT = 1097859072 / 0x41700000
+Stage: WB
+ALU_OUTPUT = 1120403456 / 0x42c80000
+General purpose registers:
+R0 = 0 / 0x0
+R1 = 40960 / 0xa000
+F0 = 0 / 0x0
+F1 = 10 / 0x41200000
+F2 = 2 / 0x40000000
+F3 = 3 / 0x40400000
+F4 = 4 / 0x40800000
+F5 = 5 / 0x40a00000
+F6 = 6 / 0x40c00000
+F7 = 7 / 0x40e00000
+F8 = 8 / 0x41000000
+F9 = 9 / 0x41100000
+
+CLOCK CYCLE #16
+Special purpose registers:
+Stage: IF
+PC = 268435476 / 0x10000014
+Stage: ID
+NPC = 268435476 / 0x10000014
+Stage: EX
+NPC = 268435476 / 0x10000014
+Stage: MEM
+Stage: WB
+ALU_OUTPUT = 1097859072 / 0x41700000
+General purpose registers:
+R0 = 0 / 0x0
+R1 = 40960 / 0xa000
+F0 = 0 / 0x0
+F1 = 10 / 0x41200000
+F2 = 2 / 0x40000000
+F3 = 100 / 0x42c80000
+F4 = 4 / 0x40800000
+F5 = 5 / 0x40a00000
+F6 = 6 / 0x40c00000
+F7 = 7 / 0x40e00000
+F8 = 8 / 0x41000000
+F9 = 9 / 0x41100000
+
+CLOCK CYCLE #17
+Special purpose registers:
+Stage: IF
+PC = 268435476 / 0x10000014
+Stage: ID
+NPC = 268435476 / 0x10000014
+Stage: EX
+NPC = 268435476 / 0x10000014
+Stage: MEM
+Stage: WB
+General purpose registers:
+R0 = 0 / 0x0
+R1 = 40960 / 0xa000
+F0 = 0 / 0x0
+F1 = 10 / 0x41200000
+F2 = 2 / 0x40000000
+F3 = 15 / 0x41700000
+F4 = 4 / 0x40800000
+F5 = 5 / 0x40a00000
+F6 = 6 / 0x40c00000
+F7 = 7 / 0x40e00000
+F8 = 8 / 0x41000000
+F9 = 9 / 0x41100000
+
+CLOCK CYCLE #18
+Special purpose registers:
+Stage: IF
+PC = 268435476 / 0x10000014
+Stage: ID
+NPC = 268435476 / 0x10000014
+Stage: EX
+NPC = 268435476 / 0x10000014
+Stage: MEM
+Stage: WB
+General purpose registers:
+R0 = 0 / 0x0
+R1 = 40960 / 0xa000
+F0 = 0 / 0x0
+F1 = 10 / 0x41200000
+F2 = 2 / 0x40000000
+F3 = 15 / 0x41700000
+F4 = 4 / 0x40800000
+F5 = 5 / 0x40a00000
+F6 = 6 / 0x40c00000
+F7 = 7 / 0x40e00000
+F8 = 8 / 0x41000000
+F9 = 9 / 0x41100000
+
+CLOCK CYCLE #19
+Special purpose registers:
+Stage: IF
+PC = 268435476 / 0x10000014
+Stage: ID
+NPC = 268435476 / 0x10000014
+Stage: EX
+NPC = 268435476 / 0x10000014
+Stage: MEM
+Stage: WB
+General purpose registers:
+R0 = 0 / 0x0
+R1 = 40960 / 0xa000
+F0 = 0 / 0x0
+F1 = 10 / 0x41200000
+F2 = 2 / 0x40000000
+F3 = 15 / 0x41700000
+F4 = 4 / 0x40800000
+F5 = 5 / 0x40a00000
+F6 = 6 / 0x40c00000
+F7 = 7 / 0x40e00000
+F8 = 8 / 0x41000000
+F9 = 9 / 0x41100000
+
+EXECUTING PROGRAM TO COMPLETION...
+
+PROGRAM TERMINATED
+===================
+
+Special purpose registers:
+Stage: IF
+PC = 268435476 / 0x10000014
+Stage: ID
+NPC = 268435476 / 0x10000014
+Stage: EX
+NPC = 268435476 / 0x10000014
+Stage: MEM
+Stage: WB
+General purpose registers:
+R0 = 0 / 0x0
+R1 = 40960 / 0xa000
+F0 = 0 / 0x0
+F1 = 10 / 0x41200000
+F2 = 2 / 0x40000000
+F3 = 25 / 0x41c80000
+F4 = 4 / 0x40800000
+F5 = 0.857143 / 0x3f5b6db7
+F6 = 6 / 0x40c00000
+F7 = 7 / 0x40e00000
+F8 = 8 / 0x41000000
+F9 = 9 / 0x41100000
+data_memory[0x0000a000:0x0000a010]
+0x0000a000: 00 00 20 41 
+0x0000a004: 00 00 a0 41 
+0x0000a008: 00 00 f0 41 
+0x0000a00c: 00 00 20 42 
+
+Instruction executed = 5
+Clock cycles = 38
+Stall inserted = 10
+IPC = 0.131579
